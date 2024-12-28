@@ -12,7 +12,7 @@ const News = () => {
   useEffect(() => {}, []);
   const shareNews =()=>{
     Share.share({
-      message:`${news.title} \n Read More ${news.description}`
+      message:`${news.title} \nRead More ${news.description} ${news.url}`
     })
   }
   return (
